@@ -42,6 +42,7 @@ Payments via [x402 protocol](https://www.x402.org/) on Base mainnet. No API keys
 - **Docs:** https://semanticapi.dev/api/docs
 - **Built by:** [Cove AI](https://coveai.dev)
 - **X/Twitter:** [@semanticapiguy](https://x.com/semanticapiguy)
+- **LinkedIn:** [Peter Thompson](https://linkedin.com/in/peter-j-thompson)
 
 ## License
 
