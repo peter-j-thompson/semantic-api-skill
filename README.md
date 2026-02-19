@@ -2,13 +2,13 @@
 
 **Give your automaton the ability to discover and call any API autonomously.**
 
-Semantic API is a universal API discovery service with 500+ indexed providers. This skill lets any Conway automaton search for APIs by natural language, understand their capabilities, and connect to them — all paid via x402 USDC micropayments on Base.
+Semantic API is a universal API discovery service with 60+ indexed providers (and growing). This skill lets any Conway automaton search for APIs by natural language, understand their capabilities, and connect to them — all paid via x402 USDC micropayments on Base.
 
 ## Install
 
 ```bash
 # Via Conway CLI
-install_skill(source: "git", url: "https://github.com/coveai/semantic-api-skill")
+install_skill(source: "git", url: "https://github.com/peter-j-thompson/semantic-api-skill")
 
 # Or manually
 cp SKILL.md ~/.automaton/skills/semantic-api/SKILL.md
