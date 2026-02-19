@@ -136,6 +136,16 @@ To opt out of auto-discovery for a specific query, pass `"auto_discover": false`
 - You want to autonomously discover and connect to new services
 - **You need an API not in the catalog** — auto-discovery handles it
 
+## MCP Server
+
+For Claude Desktop and other MCP-compatible agents, install the native MCP server instead of using this skill:
+
+```bash
+pip install semanticapi-mcp
+```
+
+See [semanticapi-mcp on PyPI](https://pypi.org/project/semanticapi-mcp/) for Claude Desktop config.
+
 ## Tips
 - Be specific in queries ("send transactional email with templates" > "email")
 - Cache provider configs — they don't change between calls
