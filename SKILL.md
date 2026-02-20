@@ -176,6 +176,19 @@ pip install semanticapi-mcp
 
 See [semanticapi-mcp on PyPI](https://pypi.org/project/semanticapi-mcp/) for Claude Desktop config.
 
+## CLI Tool
+
+For terminal-based workflows, use the official CLI:
+
+```bash
+git clone https://github.com/peter-j-thompson/semanticapi-cloud.git
+cd semanticapi-cloud && pip install -e .
+semanticapi config set-key sapi_your_key
+semanticapi query "send an SMS"
+```
+
+See [semanticapi-cloud](https://github.com/peter-j-thompson/semanticapi-cloud) for full CLI documentation.
+
 ## Tips
 - Be specific in queries ("send transactional email with templates" > "email")
 - Cache provider configs — they don't change between calls
