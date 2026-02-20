@@ -12,12 +12,22 @@ requires:
 
 You have access to Semantic API, a universal API discovery and execution service. When you need to interact with ANY external API or service, use this skill to find it, understand it, and call it.
 
+## Two Modes
+
+| Mode | Endpoint | Use When |
+|------|----------|----------|
+| **Discovery** | `POST /api/query` | You want to find the right API and call it yourself. Returns provider, endpoint, auth setup, and code snippets. |
+| **Execution** | `POST /api/query/agentic` | You want Semantic API to call the API for you. Returns the actual API response. Requires stored credentials. |
+
+Use **Discovery** when you can make HTTP calls yourself. Use **Execution** when you want one endpoint to handle everything.
+
 ## Endpoints
 
 | Endpoint | Method | What It Does | x402 Price |
 |----------|--------|-------------|------------|
-| `/api/query` | POST | Natural language query → matched API capability | $0.01 USDC |
-| `/api/query/batch` | POST | Batch up to 10 queries in one call | $0.05 USDC |
+| `/api/query` | POST | **Discovery** — natural language → matched API + code snippets | $0.01 USDC |
+| `/api/query/agentic` | POST | **Execution** — natural language → actual API response | $0.01 USDC |
+| `/api/query/batch` | POST | Batch up to 10 discovery queries in one call | $0.05 USDC |
 | `/api/query/preflight` | POST | Check if a query would match (free, no LLM) | Free |
 | `/api/discover/search` | POST | Find a specific provider/API by name + intent | $0.05 USDC |
 | `/api/discover/from-url` | POST | Deep analysis of any API from its URL/docs | $0.10 USDC |
