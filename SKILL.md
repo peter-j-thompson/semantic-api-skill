@@ -24,6 +24,26 @@ You have access to Semantic API, a universal API discovery and execution service
 
 **Base URL:** `https://semanticapi.dev`
 
+## Authentication
+
+Two options — use whichever your agent supports:
+
+```bash
+# Option 1: API Key (X-API-Key header)
+curl -s "https://semanticapi.dev/api/query" \
+  -H "X-API-Key: sapi_your_key_here" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "send an SMS"}'
+
+# Option 2: API Key (Authorization Bearer header)
+curl -s "https://semanticapi.dev/api/query" \
+  -H "Authorization: Bearer sapi_your_key_here" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "send an SMS"}'
+```
+
+Without an API key, priced endpoints return HTTP 402 with x402 USDC payment info (see below).
+
 ## How to Use
 
 ### 1. Search for an API by Query
